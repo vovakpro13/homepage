@@ -12,7 +12,10 @@
                 <div class="stackable grid">
                     <div class="row">
                         <div class="three wide center aligned column">
-                            
+                            <div class="avatar-wrapper">
+                                <object aria-label="My profile picture" class="avatar" data="./assets/images/avatar.svg"
+                                        role="img"></object>
+                            </div>
                         </div>
                         <div class="thirteen wide column">
                             <div class="stackable grid">
@@ -25,7 +28,7 @@
                                                 <svg class="icon" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"/>
                                                 </svg>
-                                                <span>Ryu Hoshi(リュウ)</span>
+                                                <span>Ryu Hoshi</span>
                                             </a>
                                         </li>
                                         <li>
@@ -72,53 +75,20 @@
                     </div>
                     <div class="row">
                         <div class="ten wide column">
-                            <h3>Experience</h3>
+                            <h3>EXPERIENCE</h3>
                             <h6>Recent</h6>
-                            <!-- Timeline (recent events) -->
-                            <h6>Back then</h6>
-                            <!-- Timeline (older events) -->
-
+                            <ul class="timeline" id="timelineRecent"></ul>
+                            <ul class="timeline" id="timelineBack"></ul>
+                            <ul class="timeline" id="details"></ul>
                         </div>
-                        <div class="six wide column">
-                            <section>
-                                <section>
-                                    <h3>LIFE & EDUCATION</h3>
-                                    <p class="tags small">
-                                        To live is to fight and to fight is to live. I started learning fighting at my master Gouken's
-                                        castle, I was beaten at head way too often to remember when exactly.
-                                    </p>
-                                </section>
-                                <h3>Languages</h3>
-                                <p class="tags small">
-                                    <a href="/us" hreflang="uk" rel="alternate" class="language" lang="uk">
-                                        <span class="language" lang="us">🇺🇸 ENGLISH</span>
-                                    </a>
-                                    <span class="language" lang="cn"> 🇨🇳 MANDARIN </span>
-                                    <span class="language" lang="jp">🇯🇵 JAPANESE</span>
-                                </p>
-                            </section>
-                            <section>
-                                <h3>Skills</h3>
-                                <p class="tags small">
-                                    KARATE ENERGY ATTACK SHORYUKEN WALKING BAREFOOT PLAYING VIDEOGAMES DOING BURGERS MASHING POTATOES
-                                    COPYWRITING ACTING VOICEOVERS
-                                </p>
-                            </section>
-                            <section>
-                                <h3>Character</h3>
-                                <p class="tags small">NOBLE DIRECT BOLD CONFIDENT DARING SCHIZOPHRENIC DRAMATIC PERSUASIVE IMMEDIATE
-                                    WISE</p>
-                            </section>
-                            <!-- Likes -->
-                            <!-- Dislikes -->
-                            <!-- Wants -->
-                            <!-- Education -->
-                            <!-- Articles -->
-                        </div>
+                        <div class="six wide column" id="rightSide"></div>
                     </div>
                 </div>
             </div>
         </article>
     </main>
+    <script src="htmlGenerators.js"></script>
+    <script src="data.js"></script>
+    <script src="code.js"></script>
 </body>
 </html>
