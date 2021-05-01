@@ -2,26 +2,27 @@ const recentHistory = [
     {
         year: '2016 - 2018',
         eventsHTML: [
-            'Amongst many fighters of the past was featured in the movie "Ready Player One". Ryu ready always!',
-            'In "Street Fighter V" once and for all erased M.Bison from earth and tamed my inner Evil Ryu. Also spent some time on a side-project, mini-series "Street Fighter: Resurrection".',
-            'United with unknown until then to me Power Rangers to defea resurrected M.Bison.Damn good fighters they are, even not knowing karate ways!'
+            'Amongst many fighters of the past was featured in the movie <strong>"Ready Player One"</strong>. Ryu ready always!',
+            'In <a rel="external" target="_blank" href="https://store.playstation.com/ru-ua/product/EP0102-CUSA01222_00-SF5FULLGAME00000"><strong>"Street Fighter V"</strong></a> once and for all erased M.Bison from earth and tamed my inner Evil Ryu. Also spent some time on a side-project, ' +
+            'mini-series <a rel="external" target="_blank" href="https://en.wikipedia.org/wiki/Street_Fighter:_Resurrection"><strong>"Street Fighter: Resurrection"</strong></a>.',
+            'United with unknown until then to me <em>Power Rangers</em> to defea resurrected M.Bison.Damn good fighters they are, even not knowing karate ways!'
         ]
     },
     {
         year: 2014,
-        eventsHTML: ['Filmed in a martial arts tutorial "Street Fighter: Assassin\'s Fist", revealing to audience forgotten art of Ansatsuken.']
+        eventsHTML: ['Filmed in a martial arts tutorial  <strong><a rel="external" target="_blank" href="https://en.wikipedia.org/wiki/Street_Fighter:_Assassin%27s_Fist">"Street Fighter: Assassin\'s Fist"</a></strong>, revealing to audience forgotten art of Ansatsuken.']
     },
     {
         year: 2012,
-        eventsHTML: ['The gods of intenet concluded me in the animated movie "Wreck-It Ralph", but rewarded me with a good drink for it!']
+        eventsHTML: ['<u>The gods of intenet</u> concluded me in the animated movie <a rel="external" target="_blank" href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%BB%D1%8C%D1%84_(%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)"><strong>"Wreck-It Ralph"</strong></a>, but rewarded me with a good drink for it!']
     },
     {
         year: 2008,
-        eventsHTML: ['My evil alter ego sneaked out of control and became a boss in "Street Fighter IV".']
+        eventsHTML: ['My evil alter ego sneaked out of control and became a boss in <a rel="external" target="_blank" href="https://ru.wikipedia.org/wiki/Street_Fighter_IV"><strong>"Street Fighter IV"</strong></a>.']
     },
     {
         year: 2006,
-        eventsHTML: ['Borrowed my famous ripped gi to Soki in "Onimusha: Dawn of Dreams", gods informed me he needed that for the battle.']
+        eventsHTML: ['Borrowed my famous ripped gi to Soki in <a rel="external" target="_blank" href="https://en.wikipedia.org/wiki/Onimusha:_Dawn_of_Dreams"><strong>"Onimusha: Dawn of Dreams"</strong></a>, gods informed me he needed that for the battle.']
     },
 ];
 const oldHistory = [
@@ -31,7 +32,6 @@ const oldHistory = [
         eventsHTML: [
             'Defeated M. Bison in "Street Fighter Alpha 2", bastard wanted to use my heroic body for his evil intentions, but retreated with shame. Also this year I encountered Marvel universe in "Marvel vs. Capcom: Clash of Super Heroes" fighter,loyal to my employer, Capcom, of course.',
             'Some smile :)'
-
         ],
 
     },
@@ -66,46 +66,24 @@ const oldHistory = [
         eventsHTML: ['Started working for Capcom project "Street Fighter". My partner was Ken Masters, the boss\'name was Sagat.']
     },
 ];
-const lists = [
-    {
-        fatherId: 'timelineRecent',
-        listParameters: {
-            tag: 'li',
-            classList: [],
-            data: recentHistory,
-            htmlCreator: htmlHistoryItem
-        }
-    }
-];
-
-const publications = [
-    {
-        year: 2011,
-        eventsHTML: ['The true and humble story of me under pseudonim Tyler Wilde in an article "The evolution of Ken and Ryu"']
-    },
-    {
-        year: '2003-2018',
-        eventsHTML: ['For 15 years I have published comic books with Udon Entertainment depicting my adventures, bitter lessons and great victories.']
-    }
-];
 
 
 const achievments = [
     {
-        textHTML: '#1 in "Top 25 Street Fighter Characters" by IGN, who also called me "fancy", "icon" and "a\n' +
+        textHTML: '<strong>#1</strong> in <strong>"Top 25 Street Fighter Characters"</strong> by IGN, who also called me "fancy", "icon" and "a\n' +
             'testament to the virtue of simplicity" ❤'
     },
     {
-        textHTML: '#2 in "Top 20 Street Fighter Characters of All Time" by GameDaily, same council found me\n' +
-            'worth of #6 place in "Top 25 Capcom Characters of All Time", which I proudly share with my\n' +
+        textHTML: '<strong>#2</strong> in <strong>"Top 20 Street Fighter Characters of All Time"</strong> by GameDaily, same council found me\n' +
+            'worth of <strong>#6</strong> place in <strong>"Top 25 Capcom Characters of All Time"</strong>, which I proudly share with my\n' +
             'partner Ken'
     },
     {
-        textHTML: 'I was named "5th Most Powerful Street Fighter Character" by Screen Rant-san'
+        textHTML: 'I was named <strong>"5th Most Powerful Street Fighter Character"</strong> by <u>Screen Rant-san</u>'
     },
     {
-        textHTML: '#71 in "Top 100 Heroes of All Time" by UGO Networks, also recognized #2 in their list of\n' +
-            '"Top 50 Street Fighter Characters"'
+        textHTML: '<strong>#71</strong> in <strong>"Top 100 Heroes of All Time"</strong> by <u>UGO Networks</u>, also recognized <strong>#2</strong> in their list of\n' +
+            '<em>"Top 50 Street Fighter Characters"</em>'
     },
     {
         textHTML: 'In a survey of 4000 online matches for Super Street Fighter IV, I got to be the most popular\n' +
@@ -115,6 +93,28 @@ const achievments = [
 
 
 const detailBlocks = [
+    {
+        fatherId: 'timelineRecent',
+        detailBlock: {
+            blockId: 1,
+            tag: 'li',
+            tagClasses: [],
+            title: 'RECENT',
+
+
+            listId: 'recentItems',
+            listItem: {
+                tag: 'li',
+                classList: [],
+                data: recentHistory,
+                htmlCreator: htmlEventItem
+            },
+
+            htmlCreator: htmlRecentBlock,
+
+        },
+
+    },
     {
         fatherId: 'timelineBack',
         detailBlock: {
@@ -143,15 +143,24 @@ const detailBlocks = [
             blockId: 2,
             tag: 'li',
             tagClasses: ['details'],
-            label: '<h3>PUBLICATIONS</h3>',
+            label: '<h5><u>PUBLICATIONS</u></h5>',
 
 
             listId: 'pubItems',
             listItem: {
                 tag: 'p',
                 classList: [],
-                data: publications,
-                htmlCreator: htmlHistoryItem
+                data: [
+                    {
+                        year: 2011,
+                        eventsHTML: ['The true and humble story of me under pseudonim Tyler Wilde in an article "The evolution of Ken and Ryu"']
+                    },
+                    {
+                        year: '2003-2018',
+                        eventsHTML: ['For 15 years I have published comic books with Udon Entertainment depicting my adventures, bitter lessons and great victories.']
+                    }
+                ],
+                htmlCreator: htmlPublicationItem
             },
 
             htmlCreator: htmlDetailsBlock,
@@ -189,7 +198,7 @@ const detailBlocks = [
                 tag: 'span',
                 classList: [],
                 data: ['To live is to fight and to fight is to live. I started learning fighting at my master Gouken\'s castle, I was beaten at head way too often to remember when exactly.'],
-                htmlCreator: function(text){return  text}
+                htmlCreator: simpleReturn
             },
 
             htmlCreator: htmlSimpleSectionBlock
@@ -230,7 +239,7 @@ const detailBlocks = [
                     'KARATE', 'ENERGY', '<em>ATTACK</em>', 'SHORYUKEN', '<b>WALKING</b>', 'BAREFOOT', '<b>PLAYING VIDEOGAMES</b>', 'DOING BURGERS', 'MASHING POTATOES',
                     'COPYWRITING', 'ACTING VOICEOVERS'
                 ],
-                htmlCreator: skill => skill
+                htmlCreator: simpleReturn
 
             },
 
@@ -253,7 +262,7 @@ const detailBlocks = [
                     '<b>NOBLE</b>', 'DIRECT', '<em>BOLD</em>', 'CONFIDENT', '<b>SCHIZOPHRENIC</b>','DARING',  '<b>DRAMATIC</b>', 'PERSUASIVE', 'IMMEDIATE',
                     'WISE'
                 ],
-                htmlCreator: (lang) => lang + ' | '
+                htmlCreator: w => w + ' |   '
 
             },
 
@@ -272,7 +281,7 @@ const detailBlocks = [
                 tag: 'span',
                 classList: [],
                 data: ['You must defeat Sheng Long to stand a chance.'],
-                htmlCreator: (text) => text
+                htmlCreator: simpleReturn
 
             },
 
@@ -291,7 +300,7 @@ const detailBlocks = [
                 tag: 'span',
                 classList: [],
                 data: ['GI VEGETABLES BLOOD SMALL MARSHMELLOWS RED COLOR KILLED ENEMY'],
-                htmlCreator: (text) => text
+                htmlCreator: simpleReturn
 
             },
 
@@ -310,7 +319,7 @@ const detailBlocks = [
                 tag: 'span',
                 classList: [],
                 data: ['BISONS GHOSTS SMARTPHONES SMELL OF SEAFOOD BARBER SHOPS SLEEVES'],
-                htmlCreator: (text) => text
+                htmlCreator: simpleReturn
 
             },
 
@@ -329,7 +338,7 @@ const detailBlocks = [
                 tag: 'span',
                 classList: [],
                 data: ['BE FIT WRITE MORE BOOKS FIND A GIRLFRIEND TO GO TO CINEMA WITH KILL ALL OF AKUMA FAMILY'],
-                htmlCreator: (text) => text
+                htmlCreator: simpleReturn
 
             },
 
