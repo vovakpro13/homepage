@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="094afeda-5a18-4420-84fb-8f87bc78ee25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

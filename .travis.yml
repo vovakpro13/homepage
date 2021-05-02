@@ -6,16 +6,16 @@ script:
   - workbox generateSW workbox-config.js
 deploy:
   - provider: s3
-    skip_cleanup: true
+    cleanup: true
     access_key_id: $ACCESS_KEY_ID
     secret_access_key: $SECRET_ACCESS_KEY
     bucket: "binaryacademy-staging"
     region: eu-central-1
     acl: public_read
     on:
-      branch: develop
+      branch: patch/content/secondary
   - provider: s3
-    skip_cleanup: true
+    cleanup: true
     access_key_id: $ACCESS_KEY_ID
     secret_access_key: $SECRET_ACCESS_KEY
     bucket: "binaryacademy-production"
