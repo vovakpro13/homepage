@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="094afeda-5a18-4420-84fb-8f87bc78ee25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependencies/volodymyrkushnir.com" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workbox-config.js" afterDir="false" />
+    <list default="true" id="094afeda-5a18-4420-84fb-8f87bc78ee25" name="Default Changelist" comment="Add workbox-config.js">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sw.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/sw.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <workItem from="1619849814632" duration="26827000" />
       <workItem from="1619883858278" duration="233000" />
       <workItem from="1619940768990" duration="4155000" />
-      <workItem from="1619947276829" duration="1117000" />
+      <workItem from="1619947276829" duration="3249000" />
     </task>
     <servers />
   </component>
